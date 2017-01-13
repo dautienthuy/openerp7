@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Request of Payment" language="groovy" pageWidth="595" pageHeight="842" columnWidth="545" leftMargin="28" rightMargin="22" topMargin="22" bottomMargin="0">
-	<property name="ireport.zoom" value="1.69639047348994"/>
+	<property name="ireport.zoom" value="1.6963904734899413"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="378"/>
+	<property name="ireport.y" value="543"/>
 	<property name="ireport.callouts" value="##Fri Mar 25 10:42:30 ICT 2011"/>
 	<property name="ireport.layers" value="##Mon Nov 14 16:28:24 ICT 2011\nlayer.2.visible=true\nlayer.1.name=VND\nlayer.0.visible=true\nlayer.2.id=3\nlayer.1.printWhenExpression=$F{Currency}\=\=&quot;VND&quot;\nlayer.2.name=USD\nlayer.2.printWhenExpression=$F{Currency}\!\=&quot;VND&quot;\nlayer.1.id=2\nlayer.1.visible=true\nlayer.0.id=0\nlayer.0.name=Background"/>
 	<property name="OPENERP_RELATIONS" value="[&apos;order_line&apos;]"/>
@@ -411,7 +411,7 @@ new SimpleDateFormat("dd-MMM-yyyy").format($F{Effective_Date-effective_date})]]>
 			</band>
 		</groupHeader>
 		<groupFooter>
-			<band height="453">
+			<band height="493">
 				<staticText>
 					<reportElement mode="Opaque" x="328" y="271" width="93" height="16" backcolor="#FFFFFF"/>
 					<box>
@@ -1602,6 +1602,18 @@ new SimpleDateFormat("dd-MMM-yyyy").format($F{Effective_Date-effective_date})]]>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[":"]]></textFieldExpression>
 				</textField>
+				<staticText>
+					<reportElement mode="Transparent" x="14" y="473" width="177" height="20" forecolor="#666666" backcolor="#FFFFFF"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[QMS-QT-07 M2]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="42" y="453" width="149" height="20"/>
+					<textElement/>
+					<text><![CDATA[]]></text>
+				</staticText>
 			</band>
 		</groupFooter>
 	</group>
