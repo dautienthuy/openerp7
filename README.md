@@ -56,7 +56,7 @@ This repository included a docker-compose.yml file that ready to use with the co
         * **`./pgtools.bash -C=NameOfDatabaseContainer -F=PathToFileDatabse -D=NameOfDatabase create`**
         * Before to use pgtools please follow introduction:
             * Download file **pgtools.bash** from this repository.
-            * Make file can excuateble **```chmod +x1 pgtools.bash```**
+            * Make file can excuateble **```chmod +x pgtools.bash```**
         
 * Please note when using docker-compose
     * Port opening (in container) (Already exposed)
