@@ -19,11 +19,11 @@ KINDEN VIETNAM OpenERP 7 customization modules.
 
 7. General Expenses
 
-8. Addtional Tools
+8. Additional Tools
 
-### Already to use docker-compose file
+### Ready to use docker-compose file
 
-This repository included a docker-compose.yml file that already to used with the command **`docker-compose up`**
+This repository included a docker-compose.yml file that ready to use with the command **`docker-compose up`**
 *Some notes:*
 
 * General ways to commit code
@@ -42,13 +42,13 @@ This repository included a docker-compose.yml file that already to used with the
     * git checkout oe7-develop
 
 * If push your changing to common repository
-    * goto your forked repositry click pull request -> create pull request
+    * goto your forked repository click pull request -> create pull request
 
-* Get latest code from common repository
+* Get the latest code from common repository
     * Add upstream to your working git folder (one time only)
         * git remote add upstream https://www.github.com/kdvn/openerp7
         * git fetch --all
-        * git merge upstream/oe7-develop (Note: Must working on your branch you want to get latest code)
+        * git merge upstream/oe7-develop (Note: Must working on your branch you want to get the latest code)
         * git push
 
 * Using pgtool.bash to dump or restore a database (**on real machine running docker**) (This tool only running on linux)
@@ -68,4 +68,3 @@ This repository included a docker-compose.yml file that already to used with the
         * /opt/workspace: Your workspace
     * *Please change or remove LOCAL_USER_ID, this variable is used to change user id in the container*. Command to get user id **`id -u $USER`** 
     * Passwords showing in the docker-compose.yml file are for demonstration purpose only. They can be changed and **should _NOT_ upload** to github.
-
